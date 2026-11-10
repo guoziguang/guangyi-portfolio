@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171114" />
+    <meta name="description" content="洪光熠的游戏 UI 动效设计作品集：六段实录、交互反馈、项目实践与联系方式。" />
+    <meta property="og:title" content="洪光熠 — 游戏 UI 动效设计" />
+    <meta property="og:description" content="从界面状态到反馈节奏，记录游戏 UI 动效作品与实践。" />
+    <title>洪光熠 — 游戏 UI 动效设计</title>
+    <link rel="icon" href="media/mark.svg" type="image/svg+xml" />
+    <link rel="preload" href="media/suzuka-hero.webp" as="image" type="image/webp" fetchpriority="high" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-name"><strong>洪光熠</strong><small>GAME UI / MOTION</small></span>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#works">作品 <span>01</span></a>
+        <a href="#approach">方向 <span>02</span></a>
+        <a href="#contact">联系 <span>03</span></a>
+      </nav>
+      <a class="header-index" href="#works"><span class="signal-dot"></span><span id="profile-class-year">2027 届</span> · 求职作品集</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" data-scroll-stop aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true"></div>
+        <div class="hero-moon" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+        <img class="hero-character" src="media/suzuka-hero.webp" alt="铃鹿御前风格化立绘" fetchpriority="high" />
+        <div class="hero-particles" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+        <div class="hero-content">
+          <p class="eyebrow"><span>个人作品档案</span><i></i><span>2027 届</span></p>
+          <p class="hero-name" id="profile-name">洪光熠</p>
+          <h1 id="hero-title">游戏 UI<br /><em>动效设计</em></h1>
+          <p class="hero-summary">界面反馈清晰，操作更有节奏。</p>
+          <div class="hero-credentials" aria-label="个人信息">
+            <span id="profile-school">西安美术学院</span><i></i><span id="profile-major">环境设计 · 本科</span><i></i><span id="profile-education-years">2023—2027</span>
+          </div>
+          <div class="hero-actions">
+            <a class="hero-link hero-link-primary" href="#works"><span>观看作品</span><b aria-hidden="true">↘</b></a>
+            <a class="hero-link hero-link-secondary" href="#approach"><span>查看经历与方法</span><b aria-hidden="true">↓</b></a>
+          </div>
+          <div class="hero-rank"><strong id="profile-rank">1 / 60</strong><span>专业排名</span><small id="profile-rank-note">简历注明 · 年级前 1%</small></div>
+        </div>
+
+        <div class="hero-sidecode" aria-hidden="true"><span>GAME UI MOTION</span><b>状态 / 节奏 / 反馈</b></div>
+        <div class="hero-bottom">
+          <span>界面状态 <i>·</i> 动效节奏 <i>·</i> 落地交付</span>
+          <a class="hero-scroll" href="#works">滚轮 / 触屏 · 下一屏 <b aria-hidden="true">↓</b></a>
+          <span>作品实录 / 6 段</span>
+        </div>
+      </section>
+
+      <section class="works-section" id="works" data-scroll-stop aria-labelledby="works-title">
+        <div class="section-heading">
+          <div class="section-index"><span>01</span><i></i><span>精选作品 / SELECTED WORKS</span></div>
+          <div class="section-title-row">
+            <div>
+              <p class="section-kicker">六段动效实录 · 全部作品已更新</p>
+              <h2 id="works-title">让每次操作都清晰。</h2>
+            </div>
+            <p class="section-intro">从卡池抽取到等级成长，<br />悬停翻面预览，点按播放完整视频。</p>
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <div id="filter-list" class="filter-list" role="group" aria-label="按作品类型筛选"></div>
+          <p class="work-count"><strong id="work-count">06</strong><span>段已上传</span><i></i><span>06 席</span></p>
+        </div>
+
+        <div class="card-space">
+          <div class="card-space-topline">
+            <span>作品档案 / MOTION FILES</span>
+            <div class="card-space-tools">
+              <span class="card-space-instruction"><b aria-hidden="true">↻</b> 鼠标悬停或点按，翻看动效</span>
+              <span class="visit-counter" id="visit-counter" role="status" aria-live="polite" aria-label="本次免费查看 0 / 3">
+                <i aria-hidden="true"></i><span id="visit-counter-label">本次免费查看</span><strong id="visit-counter-value">00</strong><span id="visit-counter-total">/ 03</span>
+              </span>
+            </div>
+          </div>
+          <div class="project-grid" id="project-grid" aria-live="polite"></div>
+          <div class="card-space-foot"><span>完整视频按需加载 · 卡牌预览为轻量版本</span><span>01—06 <i aria-hidden="true">◆</i> UI 动效档案</span></div>
+        </div>
+      </section>
+
+      <section class="approach-section" id="approach" data-scroll-stop aria-labelledby="approach-title">
+        <div class="section-index section-index-inverse"><span>02</span><i></i><span>经历与方法 / EXPERIENCE & APPROACH</span></div>
+        <div class="approach-heading">
+          <div>
+            <p class="section-kicker">履历与实践</p>
+            <h2 id="approach-title">从画面节奏，<br /><em>走到可交付的反馈设计。</em></h2>
+          </div>
+          <p>把界面看作一段连续的状态变化：重点如何出现，反馈如何被读懂，最后如何跟进实现。</p>
+        </div>
+
+        <div class="proof-strip" aria-label="经历数据">
+          <div><strong>08 <small>套</small></strong><span>《恋与深空》交互动效输出</span></div>
+          <div><strong>300</strong><span>微博校园日常海报设计</span></div>
+          <div><strong>3W+</strong><span>日常海报累计浏览</span></div>
+          <div><strong>6.2 <small>亿</small></strong><span>公益活动总阅读增量</span></div>
+        </div>
+
+        <div class="experience-layout" data-scroll-stop>
+          <div class="experience-timeline" id="experience-list" aria-label="项目与工作经历"></div>
+          <aside class="profile-panel" aria-label="教育背景与软件技能">
+            <div class="education-card">
+              <p class="panel-kicker">教育背景 / EDUCATION</p>
+              <h3>西安美术学院</h3>
+              <p>环境设计 · 本科</p>
+              <div class="education-meta"><span>2023—2027</span><b>专业排名 1 / 60</b></div>
+              <small>简历注明：年级前 1%</small>
+            </div>
+            <div class="skills-card">
+              <p class="panel-kicker">软件技能 / TOOLS</p>
+              <div class="skill-list" id="skill-list"></div>
+              <p class="skills-note">动效与界面制作相关工具</p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="method-rail" id="method-list" data-scroll-stop aria-label="设计方法"></div>
+      </section>
+
+      <section class="contact-section" id="contact" data-scroll-stop aria-labelledby="contact-title">
+        <div class="contact-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="contact-content">
+          <p class="section-kicker">03 / CONTACT</p>
+          <h2 id="contact-title">下一帧，<br /><em>从合作开始。</em></h2>
+          <p class="contact-note">欢迎交流游戏 UI、动效设计与项目机会。</p>
+          <button class="contact-link" id="contact-open" type="button"><span>联系合作</span><b aria-hidden="true">↗</b></button>
+        </div>
+        <div class="contact-signature"><strong>洪光熠</strong><span>游戏 UI 动效设计师 · 2027 届</span></div>
+        <div class="contact-meta"><span>西安美术学院 / 环境设计</span><span>联系方式点击后展开</span></div>
+      </section>
+    </main>
+
+    <aside class="page-progress" aria-label="作品集页面进度" aria-live="polite">
+      <span class="page-progress-current" id="page-progress-current">01</span>
+      <span class="page-progress-track" aria-hidden="true"><i id="page-progress-fill"></i></span>
+      <span class="page-progress-total" id="page-progress-total">01</span>
+    </aside>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#top">洪光熠 <span>游戏 UI 动效设计</span></a>
+      <span>个人作品集 <i>/</i> 持续更新</span>
+      <a href="#top" class="back-top">返回顶部 ↑</a>
+    </footer>
+
+    <dialog class="video-dialog" id="video-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-lead">
+      <div class="video-dialog-top"><div><span id="dialog-label">作品视频 / MOTION FILE</span><strong id="dialog-title"></strong></div><button class="icon-button" id="dialog-close" type="button" aria-label="关闭视频">×</button></div>
+      <div class="video-stage" id="video-stage"></div>
+      <div class="video-dialog-caption"><p id="dialog-lead"></p><span>ESC / 关闭</span></div>
+      <div class="celebration-layer" id="celebration-layer" aria-hidden="true"></div>
+    </dialog>
+
+    <dialog class="offer-dialog" id="offer-dialog" aria-labelledby="offer-dialog-title" aria-describedby="offer-dialog-note">
+      <div class="offer-dialog-shell">
+        <div class="offer-dialog-top">
+          <span class="panel-kicker">SPECIAL ACCESS / OFFER NOTICE</span>
+          <button class="icon-button offer-close" id="offer-close" type="button" aria-label="关闭解锁提示">×</button>
+        </div>
+        <div class="offer-dialog-content">
+          <span class="offer-seal" aria-hidden="true">聘</span>
+          <p class="offer-dialog-eyebrow"><i aria-hidden="true"></i> 作品档案 · 特别阅览权限 <i aria-hidden="true"></i></p>
+          <h2 id="offer-dialog-title">今日免费查看次数已用完</h2>
+          <p id="offer-dialog-note">发放 offer 即可解锁更多次数。<br />选一个 offer，继续查看下一件作品。</p>
+          <div class="offer-dialog-actions">
+            <button class="offer-button offer-button-secondary" id="offer-send" type="button"><span>发 offer</span><small>UNLOCK</small></button>
+            <button class="offer-button offer-button-primary" id="offer-send-now" type="button"><span>立刻发 offer</span><small>OPEN ALL FILES</small></button>
+          </div>
+          <small class="offer-dialog-foot">每次重新进入作品集，免费查看次数都会重新开启。</small>
+        </div>
+        <span class="offer-dialog-index" aria-hidden="true">ACCESS / 03</span>
+      </div>
+    </dialog>
+
+    <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-dialog-title" aria-describedby="contact-dialog-note">
+      <div class="contact-dialog-top"><div><span class="panel-kicker">CONTACT / COLLABORATION</span><h2 id="contact-dialog-title">联系洪光熠</h2></div><button class="icon-button contact-close" id="contact-close" type="button" aria-label="关闭联系方式">×</button></div>
+      <p class="contact-dialog-note" id="contact-dialog-note">选择一种方式，欢迎聊聊游戏 UI 动效与合作机会。</p>
+      <div class="contact-methods" id="contact-methods"></div>
+      <p class="contact-feedback" id="contact-feedback" aria-live="polite"></p>
+    </dialog>
+    <noscript><p class="noscript-note">请启用浏览器 JavaScript，以查看作品卡牌与联系方式。</p></noscript>
+  </body>
+</html>
